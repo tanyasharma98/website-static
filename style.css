@@ -1,0 +1,234 @@
+/* Css Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Css Variables */
+:root{
+    --navabar-height: 40px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    
+}
+
+/* Navigation Bar:  Logo and Image */
+
+#logo{
+    margin: 9px -13px;
+   
+    
+}
+
+#logo img{
+    height: 105px;
+    margin: -8px 8px;
+}
+/* Navigation Bar:  List Items */
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai 2', cursive;
+font-family: 'Montserrat', sans-serif;
+    
+}
+
+#navbar ul li{
+    /* color:  */
+    list-style: none;
+    font-size: 1.3rem;
+    
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 14px 17px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 1px 5px;
+    font-family: 'Roboto Condensed', sans-serif;    
+}
+#navbar ul li a:hover {
+    color: indigo;
+    background-color: lightcoral;
+}
+
+/* Home Section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 2px 200px;
+    height: 209px;
+    align-items: center;
+    justify-content: center;
+}
+#home::before{
+    content: "";
+    background: url('second.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 54%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+#home h1{
+    color: rgb(235, 243, 235);
+    text-align: center;
+    
+    text-shadow: 3px 3px 2px rgb(27, 199, 12);
+    font-family: 'Montserrat', sans-serif;
+}
+#home p{
+    color: #8c0b94;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Roboto Condensed', sans-serif;  
+}
+/* services Section */
+#services{
+    margin: 30px;
+    display: flex;
+    z-index: -1;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 3px;
+    margin: -17px 9px;
+    border-radius: 23px;
+    background-color: #b7e8e8
+}
+#services .box img{
+    height: 170px;
+    margin: auto;
+    display: block;
+    border-radius: 46px
+}
+#services .box p{
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+/* Clients Section */
+#client-section{
+    
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('fo.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 50%;
+    margin-top: 12px;
+    z-index: -1;
+    opacity: 0.4;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 12px;
+    margin: 12px 12px;
+}
+
+#clients img{
+    height: 122px;
+}
+
+/* Contact-Section */
+
+#contact{
+    position: relative; 
+    z-index: -1;   
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url('food.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 12px;
+}
+#contact-box input ,
+#contact-box  textarea {
+ width: 100%;
+ padding: 0.5rem;
+ border-radius: 10px;
+ font-size: 1.1rem;
+
+}
+
+#contact-box form{
+    width: 30%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Montserrat', sans-serif;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 8px 2px;
+    
+}
+/* Utility Class */
+.h-primary{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.8rem;
+    padding: 12px;
+    
+}
+
+.h-secondary{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.3rem;
+    padding: 2px;
+   
+}
+.btn{
+    padding: 6PX 20PX;
+    border: 2PX solid #291702;
+    background-color: #e67639a1;
+    color: #1d1203;
+    margin: 12px 9px;
+    padding: 5px;;
+    font-size: 2.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
